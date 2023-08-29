@@ -1,7 +1,5 @@
-
-
-
-
+#ifndef BINARY_TREES
+#define BINARY_TREES
 /**
  * struct binary_tree_s - Binary tree node
  *
@@ -17,10 +15,17 @@ struct binary_tree_s
     struct binary_tree_s *left;
     struct binary_tree_s *right;
 };
-
 typedef struct binary_tree_s binary_tree_t;
+/* Binary Search Tree */
 typedef struct binary_tree_s bst_t;
+/* AVL Tree */
 typedef struct binary_tree_s avl_t;
+/* Max Binary Heap */
 typedef struct binary_tree_s heap_t;
-
+/* binary_tree_print.c */
 void binary_tree_print(const binary_tree_t *);
+/* 0-binary_tree_node.c */
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+/* 1-binary_tree_insert_left.c */
+binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
+#endif

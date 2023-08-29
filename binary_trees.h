@@ -13,10 +13,10 @@
  */
 struct binary_tree_s
 {
-    int n;
-    struct binary_tree_s *parent;
-    struct binary_tree_s *left;
-    struct binary_tree_s *right;
+	int n;
+	struct binary_tree_s *parent;
+	struct binary_tree_s *left;
+	struct binary_tree_s *right;
 };
 typedef struct binary_tree_s binary_tree_t;
 /* Binary Search Tree */
@@ -51,4 +51,18 @@ size_t binary_tree_height(const binary_tree_t *tree);
 size_t binary_tree_depth(const binary_tree_t *tree);
 /* 11-binary_tree_size.c */
 size_t binary_tree_size(const binary_tree_t *tree);
+/* 12-binary_tree_leaves.c */
+size_t binary_tree_leaves(const binary_tree_t *tree);
+/* 13-binary_tree_nodes.c */
+size_t binary_tree_nodes(const binary_tree_t *tree);
+/* 14-binary_tree_balance.c */
+int binary_tree_balance(const binary_tree_t *tree);
+/* 15-binary_tree_is_full.c */
+int binary_tree_is_full(const binary_tree_t *tree);
+/* 16-binary_tree_is_perfect.c */
+int binary_tree_is_perfect(const binary_tree_t *tree);
+/* 17-binary_tree_sibling.c */
+binary_tree_t *binary_tree_sibling(binary_tree_t *node);
+/* 18-binary_tree_uncle.c */
+binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 #endif

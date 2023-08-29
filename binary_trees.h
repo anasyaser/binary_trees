@@ -45,5 +45,7 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 /* 8-binary_tree_postorder.c */
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
-
+/* 9-binary_tree_height.c */
+int max(binary_tree_t *parent);
+size_t binary_tree_height(const binary_tree_t *tree);
 #endif

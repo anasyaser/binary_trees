@@ -65,4 +65,44 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 /* 18-binary_tree_uncle.c */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
+/* 100-binary_tree_ancestor.c */
+binary_tree_t *binary_tree_ancestor(const binary_tree_t *first, const binary_tree_t *second);
+/* 101-binary_tree_levelorder.c */
+void binary_tree_levelorder(const binary_tree_t *tree, void(*func)(int));
+/* 102-binary_tree_is_complete.c */
+int binary_tree_is_complete(const binary_tree_t *tree);
+/* 103-binary_tree_rotate_left.c */
+binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
+/* 104-binary_tree_rotate_right.c */
+binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
+/* 110-binary_tree_is_bst.c */
+int binary_tree_is_bst(const binary_tree_t *tree);
+/* 111-bst_insert.c */
+bst_t *bst_insert(bst **tree, int value);
+/* 112-arrat_to_bst.c */
+bst_t *array_to_bst(int *array, size_t size);
+/* 113-bst_search.c */
+bst_t *bst_search(const bst_t *tree, int value);
+/* 114-bst_remove.c */
+bst_t *bst_remove(bst_t *root, int value);
+/* 120-binary_tree_is_avl.c */
+int binary_tree_is_avl(const binary_tree_t *tree);
+/* 121-avl_insert.c */
+avl_t *avl_insert(avl_t **tree, int value);
+/* 122-avl_to_array.c */
+avl_t *array_to_avl(int *array, size_t size);
+/* 123-avl_remove.c */
+avl_t *avl_remove(avl_t *root, int value);
+/* 124-sorted_array_to_avl.c */
+avl_t *sorted_array_to_avl(int *array, size_t size);
+/* 130-binary_tree_is_heap.c */
+int binary_tree_is_heap(const binary_tree_t *tree);
+/* 131-heap_insert.c */
+heap_t *heap_insert(heap_t **root, int value);
+/* 132-array_to_heap.c */
+heap_t *array_to_heap(int *array, size_t size);
+/* 133-heap_extract.c */
+int heap_extract(heap_t **root);
+/* 134-heap_to_sorted_array.c */
+int *heap_to_sorted_array(heap_t *heap, size_t *size);
 #endif

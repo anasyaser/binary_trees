@@ -25,6 +25,13 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	return (0);
 }
 
+/**
+ * binary_tree_is_leaf - check if node is leaf
+ *
+ * @node: pointer to node
+ * Return: 1 if leafe else 0
+ */
+
 int binary_tree_is_leaf(const binary_tree_t *node)
 {
 	if (node == NULL || node->right || node->left)

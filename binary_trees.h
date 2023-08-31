@@ -79,7 +79,7 @@ binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 /* 110-binary_tree_is_bst.c */
 int binary_tree_is_bst(const binary_tree_t *tree);
 /* 111-bst_insert.c */
-bst_t *bst_insert(bst **tree, int value);
+bst_t *bst_insert(bst_t **tree, int value);
 /* 112-arrat_to_bst.c */
 bst_t *array_to_bst(int *array, size_t size);
 /* 113-bst_search.c */

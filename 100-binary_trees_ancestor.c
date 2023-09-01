@@ -17,19 +17,22 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 
 	first_d = binary_tree_depth(first);
 	second_d = binary_tree_depth(second);
-	diff = abs(first_d - second_d);
-	while (diff)
+	diff = first_d - second_d;
+	if (second_d > first_d)
+		diff = second_d - first_d;
+	while (diff--)
 	{
 		if (first_d > second_d)
 			first = first->parent;
-		second = second->parent;
+		else
+			second = second->parent;
 	}
 	while (first != second)
 	{
 		first = first->parent;
 		second = second->parent;
 	}
-
+	return (first);
 }
 
 /**

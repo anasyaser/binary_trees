@@ -11,7 +11,7 @@
 bst_t *bst_insert(bst_t **tree, int value)
 {
 	bst_t *current;
-	bst_t *tmp_parent;
+	bst_t *tmp_parent = NULL;
 
 	current = *tree;
 	while (current)

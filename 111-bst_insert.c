@@ -13,6 +13,8 @@ bst_t *bst_insert(bst_t **tree, int value)
 	bst_t *current;
 	bst_t *tmp_parent;
 
+	if (tree == NULL)
+		return (NULL);
 	current = *tree;
 	while (current)
 	{
